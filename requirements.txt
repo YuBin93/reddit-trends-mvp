@@ -5,4 +5,4 @@ vaderSentiment==3.3.2
 matplotlib==3.7.1
 numpy==1.24.4
 scikit-learn==1.2.2
-hdbscan==0.8.332
+hdbscan==0.8.33
