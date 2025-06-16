@@ -1,0 +1,6 @@
+pandas
+praw
+bertopic==0.15.0
+vaderSentiment
+matplotlib
+scikit-learn==1.2.2
