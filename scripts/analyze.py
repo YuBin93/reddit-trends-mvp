@@ -11,7 +11,9 @@ print("Connecting to Reddit...")
 reddit = praw.Reddit(
     client_id=os.environ['REDDIT_CLIENT_ID'],
     client_secret=os.environ['REDDIT_CLIENT_SECRET'],
-    user_agent="reddit-trends-mvp by u/Sea_Key7443", # 最好换成你自己的Reddit用户名
+    user_agent="reddit-trends-mvp by u/" + os.environ['REDDIT_USERNAME'], # 动态读取用户名
+    username=os.environ['REDDIT_USERNAME'],
+    password=os.environ['REDDIT_PASSWORD'],
 )
 
 subreddits_to_scan = ['futurology', 'technology', 'singularity']
